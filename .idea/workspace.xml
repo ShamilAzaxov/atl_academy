@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b63c48d-9426-42ff-8959-10770ebdd1aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Fuel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/VehicleInter.java" afterDir="false" />
-    </list>
+    <list default="true" id="9b63c48d-9426-42ff-8959-10770ebdd1aa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +38,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "shamil",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -102,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714481498491</updated>
-      <workItem from="1714481500063" duration="2288000" />
+      <workItem from="1714481500063" duration="3593000" />
     </task>
     <servers />
   </component>

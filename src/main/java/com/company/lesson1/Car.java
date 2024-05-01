@@ -1,4 +1,4 @@
-package com.company;
+package com.company.lesson1;
 
 public class Car extends Vehicle{
    private Company company;
