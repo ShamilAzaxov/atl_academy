@@ -1,0 +1,20 @@
+-- 1. Write an SQL query that selects all the data from the "Employees" table and displays the result.
+select * from employees;
+-- 2. Write an SQL query that selects and displays the names and email addresses of all customers from the "Customers" table.
+select c.name, c.email from customers c;
+--     3. Write an SQL query that selects the information about orders from the "Orders" table with a status of "Completed".
+select * from orders where status = 'Completed';
+--     4. Write an SQL query that selects the name and price of all products from the "Products" table in the "Electronics" category.
+select name , price from products where category = 'Electronics';
+-- 5. Write an SQL query that selects the total revenue (Revenue) from the "Sales" table for each sale.
+select revenue from sales;
+--     6. Write an SQL query that selects the total quantity of items (Quantity) from the "Inventory" table for each product.
+select sum(quantity) from inventory group by productid;
+-- 7. Write an SQL query that selects and displays the full name (FirstName and LastName) of all employees with the position "Manager".
+select concat(firstname,' ', lastname) fullname from employees;
+-- 8. Write an SQL query that selects the information about orders from the "Orders" table for a customer with the identifier (CustomerID) equal to 2.
+select * from orders where customerid = 2;
+-- 9. Write an SQL query that selects the information about products and the quantity of sales from the "Sales" table where the quantity of sales is greater than 10.
+select p.productid, p.name, p.category, p.price, s.quantity from products p inner join sales s on p.productid = s.productid where s.quantity>=10;
+-- 10. Write an SQL query that selects the most expensive product (Product) from the "Products" table based on the price.
+select * from products p where p.price = (select max(p2.price) from products p2);
