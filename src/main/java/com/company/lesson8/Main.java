@@ -17,7 +17,6 @@ public class Main {
         Arrays.sort(students, comparator);
         System.out.println(Arrays.toString(students));
 
-
         Comparator<Student> comparator1 = new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
@@ -27,5 +26,4 @@ public class Main {
         Arrays.sort(students, comparator1);
         System.out.println(Arrays.toString(students));
     }
-
 }
