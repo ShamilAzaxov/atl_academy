@@ -1,17 +1,13 @@
 package com.company.lesson7;
+import com.company.lesson3.Triangle;
+public class Main extends Triangle{
+    public Main(int side1, int side2, int side3) {
+        super(side1, side2, side3);
+    }
 
-import java.util.HashMap;
-import java.util.Map;
-
-public class Main {
     public static void main(String[] args) {
-        final String word = "";
-        char[] charArray = word.toCharArray();
-        Map<Character, Integer> hashMap = new HashMap<>();
-        for (char a:charArray) {
-            int count1 =(int) word.chars().filter(value -> value == a).count();
-            hashMap.put(a, count1);
-        }
-        System.out.println(hashMap);
+        Triangle triangle = new Triangle(2, 3, 4);
+        new Triangle(3,4,5);
+        System.out.println();
     }
 }

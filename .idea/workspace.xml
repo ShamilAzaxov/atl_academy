@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b63c48d-9426-42ff-8959-10770ebdd1aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/AbstractClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/AbstractClass2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/Builder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/Hamster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/413339c1-03c2-4997-938d-2dec77881a9f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/413339c1-03c2-4997-938d-2dec77881a9f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/413339c1-03c2-4997-938d-2dec77881a9f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/413339c1-03c2-4997-938d-2dec77881a9f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/lesson8/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/lesson8/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/lesson3/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/lesson3/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/lesson7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/lesson7/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/task_sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/task_sql.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,35 +49,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.FunctionalProgramming.executor": "Run",
-    "Application.Main (1).executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Maps.executor": "Run",
-    "Application.com.company.lesson3.Main.executor": "Run",
-    "Application.com.company.lesson5.Main.executor": "Run",
-    "Application.com.company.lesson7.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/shami/Desktop/MyJavaProjects/leetcode",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/shami/Desktop/MyJavaProjects/task/src/main/java/com/company/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.FunctionalProgramming.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Maps.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.company.interview.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.company.lesson3.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.company.lesson5.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.company.lesson7.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shami/Desktop/MS-26/java_proyects/ingress-ms-lessons&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/shami/Desktop/MyJavaProjects/task/src/main/java/com/company/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shami\Desktop\MyJavaProjects\task\src\main\java\com\company\lesson5" />
@@ -75,7 +88,7 @@
       <recent name="com.company" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.com.company.interview.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.lesson8.Main" />
       <module name="task" />
@@ -115,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.company.lesson5_cmprable.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.lesson5_cmprable.Main" />
+    <configuration name="com.company.interview.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.interview.Main" />
       <module name="task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.lesson5_cmprable.*" />
+          <option name="PATTERN" value="com.company.interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.company.interview.Main" />
+        <item itemvalue="Application.com.company.lesson7.Main" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.com.company.lesson7.Main" />
         <item itemvalue="Application.Maps" />
-        <item itemvalue="Application.com.company.lesson5_cmprable.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +187,10 @@
       <workItem from="1715927395989" duration="1136000" />
       <workItem from="1715941694624" duration="8991000" />
       <workItem from="1716211091641" duration="6676000" />
+      <workItem from="1716545430743" duration="9357000" />
+      <workItem from="1716807416509" duration="14957000" />
+      <workItem from="1716925261561" duration="16013000" />
+      <workItem from="1717062946980" duration="2579000" />
     </task>
     <servers />
   </component>

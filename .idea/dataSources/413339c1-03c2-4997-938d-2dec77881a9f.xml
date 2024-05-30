@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>4652</IntrospectionStateNumber>
+      <IntrospectionStateNumber>4730</IntrospectionStateNumber>
       <ServerVersion>16.1</ServerVersion>
       <StartupTime>1715852977</StartupTime>
       <TimeZones>true ACDT
@@ -837,7 +837,7 @@ false Zulu
 14643||10|C|G
 14643||-9223372036854775808|U|G
 14643||10|U|G</Grants>
-      <IntrospectionStateNumber>4652</IntrospectionStateNumber>
+      <IntrospectionStateNumber>4730</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -928,16 +928,117 @@ false Zulu
       <StateNumber>524</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
-    <schema id="34" parent="11" name="public">
+    <schema id="34" parent="11" name="products">
+      <IntrospectionStateNumber>4730</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-05-30.10:31:22</LastIntrospectionLocalTimestamp>
+      <ObjectId>30741</ObjectId>
+      <StateNumber>4694</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </schema>
+    <schema id="35" parent="11" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>4652</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-05-24.11:32:52</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>4730</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-05-30.10:31:22</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <sequence id="35" parent="34" name="expenses_id_seq">
+    <sequence id="36" parent="34" name="categories_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>30821</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4721</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="37" parent="34" name="customers_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>30844</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4725</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="38" parent="34" name="orders_details_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>30865</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4729</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="39" parent="34" name="orders_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>30853</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4727</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="40" parent="34" name="products_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>30830</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4723</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="41" parent="34" name="categories">
+      <ObjectId>30822</ObjectId>
+      <StateNumber>4723</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="42" parent="34" name="customers">
+      <ObjectId>30845</ObjectId>
+      <StateNumber>4727</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="43" parent="34" name="orders">
+      <ObjectId>30854</ObjectId>
+      <StateNumber>4727</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="44" parent="34" name="orders_details">
+      <ObjectId>30866</ObjectId>
+      <StateNumber>4729</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="45" parent="34" name="products">
+      <ObjectId>30831</ObjectId>
+      <StateNumber>4723</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <sequence id="46" parent="35" name="author_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>22694</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4659</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="47" parent="35" name="authorship_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>30707</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4675</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="48" parent="35" name="book_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>22669</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4656</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="49" parent="35" name="expenses_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>22598</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -945,7 +1046,7 @@ false Zulu
       <StateNumber>4623</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="36" parent="34" name="femalestudents_id_seq">
+    <sequence id="50" parent="35" name="femalestudents_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>22659</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -953,7 +1054,23 @@ false Zulu
       <StateNumber>4649</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="37" parent="34" name="grades_id_seq">
+    <sequence id="51" parent="35" name="genre_assignment_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>22735</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4662</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="52" parent="35" name="genre_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>22685</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4658</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="53" parent="35" name="grades_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>22638</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -961,7 +1078,15 @@ false Zulu
       <StateNumber>4643</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="38" parent="34" name="malestudents_id_seq">
+    <sequence id="54" parent="35" name="loan_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>30724</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4685</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="55" parent="35" name="malestudents_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>22650</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -969,7 +1094,7 @@ false Zulu
       <StateNumber>4648</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="39" parent="34" name="products_id_seq">
+    <sequence id="56" parent="35" name="products_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>22605</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -977,7 +1102,15 @@ false Zulu
       <StateNumber>4629</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="40" parent="34" name="sales_id_seq">
+    <sequence id="57" parent="35" name="reader_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>22678</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>4657</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="58" parent="35" name="sales_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>22591</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -985,7 +1118,7 @@ false Zulu
       <StateNumber>4620</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="41" parent="34" name="seq">
+    <sequence id="59" parent="35" name="seq">
       <DasType>bigint|0s</DasType>
       <ObjectId>21257</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -993,7 +1126,7 @@ false Zulu
       <StateNumber>3735</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="42" parent="34" name="seq_product">
+    <sequence id="60" parent="35" name="seq_product">
       <DasType>bigint|0s</DasType>
       <ObjectId>21162</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -1001,7 +1134,7 @@ false Zulu
       <StateNumber>3634</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="43" parent="34" name="student_id_seq">
+    <sequence id="61" parent="35" name="student_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>16810</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -1009,7 +1142,7 @@ false Zulu
       <StateNumber>950</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="44" parent="34" name="students_id_seq">
+    <sequence id="62" parent="35" name="students_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>22631</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -1017,7 +1150,7 @@ false Zulu
       <StateNumber>4642</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="45" parent="34" name="urls_seq">
+    <sequence id="63" parent="35" name="urls_seq">
       <DasType>bigint|0s</DasType>
       <ObjectId>21883</ObjectId>
       <SequenceIdentity>1+50</SequenceIdentity>
@@ -1025,7 +1158,7 @@ false Zulu
       <StateNumber>4165</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="46" parent="34" name="users_seq">
+    <sequence id="64" parent="35" name="users_seq">
       <DasType>bigint|0s</DasType>
       <ObjectId>22498</ObjectId>
       <SequenceIdentity>1+50</SequenceIdentity>
@@ -1033,103 +1166,561 @@ false Zulu
       <StateNumber>4552</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="47" parent="34" name="a">
+    <table id="65" parent="35" name="a">
       <ObjectId>22516</ObjectId>
       <StateNumber>4565</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="48" parent="34" name="expenses">
+    <table id="66" parent="35" name="author">
+      <ObjectId>22695</ObjectId>
+      <StateNumber>4661</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="67" parent="35" name="authorship">
+      <ObjectId>30708</ObjectId>
+      <StateNumber>4675</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="68" parent="35" name="book">
+      <ObjectId>22670</ObjectId>
+      <StateNumber>4660</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="69" parent="35" name="expenses">
       <ObjectId>22599</ObjectId>
       <StateNumber>4623</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="49" parent="34" name="femalestudents">
+    <table id="70" parent="35" name="femalestudents">
       <ObjectId>22660</ObjectId>
       <StateNumber>4649</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="50" parent="34" name="grades">
+    <table id="71" parent="35" name="genre">
+      <ObjectId>22686</ObjectId>
+      <StateNumber>4662</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="72" parent="35" name="genre_assignment">
+      <ObjectId>22736</ObjectId>
+      <StateNumber>4662</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="73" parent="35" name="grades">
       <ObjectId>22639</ObjectId>
       <StateNumber>4643</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="51" parent="34" name="images">
+    <table id="74" parent="35" name="images">
       <ObjectId>21258</ObjectId>
       <StateNumber>3736</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="52" parent="34" name="malestudents">
+    <table id="75" parent="35" name="loan">
+      <ObjectId>30725</ObjectId>
+      <StateNumber>4685</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="76" parent="35" name="malestudents">
       <ObjectId>22651</ObjectId>
       <StateNumber>4648</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="53" parent="34" name="products">
+    <table id="77" parent="35" name="products">
       <ObjectId>22606</ObjectId>
       <StateNumber>4629</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="54" parent="34" name="sales">
+    <table id="78" parent="35" name="reader">
+      <ObjectId>22679</ObjectId>
+      <StateNumber>4660</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="79" parent="35" name="sales">
       <ObjectId>22592</ObjectId>
       <StateNumber>4620</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="55" parent="34" name="shamil">
+    <table id="80" parent="35" name="shamil">
       <ObjectId>16398</ObjectId>
       <StateNumber>739</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="56" parent="34" name="student">
+    <table id="81" parent="35" name="student">
       <ObjectId>16811</ObjectId>
       <StateNumber>950</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="57" parent="34" name="students">
+    <table id="82" parent="35" name="students">
       <ObjectId>22632</ObjectId>
       <StateNumber>4643</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="58" parent="34" name="urls">
+    <table id="83" parent="35" name="urls">
       <ObjectId>21884</ObjectId>
       <StateNumber>4166</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="59" parent="34" name="users">
+    <table id="84" parent="35" name="users">
       <ObjectId>22499</ObjectId>
       <StateNumber>4553</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="60" parent="47" name="id">
+    <column id="85" parent="41" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;products.categories_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4721</StateNumber>
+      <SequenceId>30821</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="86" parent="41" name="name">
+      <DasType>varchar|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>4721</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="87" parent="41" name="categories_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30828</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4721</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="88" parent="41" name="categories_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30829</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4721</StateNumber>
+      <UnderlyingIndexId>30828</UnderlyingIndexId>
+    </key>
+    <column id="89" parent="42" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;products.customers_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4725</StateNumber>
+      <SequenceId>30844</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="90" parent="42" name="firstname">
+      <DasType>varchar|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>4725</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="91" parent="42" name="lastname">
+      <DasType>varchar|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>4725</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="92" parent="42" name="address">
+      <DasType>varchar|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>4725</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="93" parent="42" name="email">
+      <DasType>varchar|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>4725</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="94" parent="42" name="numphone">
+      <DasType>varchar|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>4725</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="95" parent="42" name="customers_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30851</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4725</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="96" parent="42" name="customers_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30852</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4725</StateNumber>
+      <UnderlyingIndexId>30851</UnderlyingIndexId>
+    </key>
+    <column id="97" parent="43" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;products.orders_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4727</StateNumber>
+      <SequenceId>30853</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="98" parent="43" name="customerid">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>4727</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="99" parent="43" name="orderdate">
+      <DasType>date|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>4727</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <foreign-key id="100" parent="43" name="orders_customerid_fkey">
+      <ColNames>customerid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30860</ObjectId>
+      <StateNumber>4727</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>30845</RefTableId>
+    </foreign-key>
+    <index id="101" parent="43" name="orders_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30858</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4727</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="102" parent="43" name="orders_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30859</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4727</StateNumber>
+      <UnderlyingIndexId>30858</UnderlyingIndexId>
+    </key>
+    <column id="103" parent="44" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;products.orders_details_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4729</StateNumber>
+      <SequenceId>30865</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="104" parent="44" name="orderid">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>4729</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="105" parent="44" name="productid">
+      <DasType>integer|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>4729</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="106" parent="44" name="quantity">
+      <DasType>integer|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>4729</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="107" parent="44" name="orders_details_orderid_fkey">
+      <ColNames>orderid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30872</ObjectId>
+      <StateNumber>4729</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>30854</RefTableId>
+    </foreign-key>
+    <foreign-key id="108" parent="44" name="orders_details_productid_fkey">
+      <ColNames>productid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30877</ObjectId>
+      <StateNumber>4729</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>30831</RefTableId>
+    </foreign-key>
+    <index id="109" parent="44" name="orders_details_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30870</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4729</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="110" parent="44" name="orders_details_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30871</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4729</StateNumber>
+      <UnderlyingIndexId>30870</UnderlyingIndexId>
+    </key>
+    <column id="111" parent="45" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;products.products_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4723</StateNumber>
+      <SequenceId>30830</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="112" parent="45" name="categoryid">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>4723</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="113" parent="45" name="name">
+      <DasType>varchar|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>4723</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="114" parent="45" name="price">
+      <DasType>numeric(10,2 digit)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>4723</StateNumber>
+      <TypeId>1700</TypeId>
+    </column>
+    <column id="115" parent="45" name="quantity">
+      <DasType>integer|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>4723</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="116" parent="45" name="description">
+      <DasType>text|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>4723</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <foreign-key id="117" parent="45" name="products_categoryid_fkey">
+      <ColNames>categoryid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30839</ObjectId>
+      <StateNumber>4723</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>30822</RefTableId>
+    </foreign-key>
+    <index id="118" parent="45" name="products_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30837</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4723</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="119" parent="45" name="products_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30838</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4723</StateNumber>
+      <UnderlyingIndexId>30837</UnderlyingIndexId>
+    </key>
+    <column id="120" parent="65" name="id">
       <DasType>integer|0s</DasType>
       <Position>1</Position>
       <StateNumber>4565</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="61" parent="47" name="name">
+    <column id="121" parent="65" name="name">
       <DasType>varchar|0s</DasType>
       <Position>2</Position>
       <StateNumber>4565</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="62" parent="47" name="surname">
+    <column id="122" parent="65" name="surname">
       <DasType>varchar|0s</DasType>
       <Position>3</Position>
       <StateNumber>4565</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="63" parent="48" name="id">
+    <column id="123" parent="66" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;author_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4659</StateNumber>
+      <SequenceId>22694</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="124" parent="66" name="first_name">
+      <DasType>varchar(30)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>4659</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="125" parent="66" name="last_name">
+      <DasType>varchar(30)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>4659</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="126" parent="66" name="birth_date">
+      <DasType>date|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>4659</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="127" parent="66" name="death_date">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>4659</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <index id="128" parent="66" name="author_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22699</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4659</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="129" parent="66" name="author_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22700</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4659</StateNumber>
+      <UnderlyingIndexId>22699</UnderlyingIndexId>
+    </key>
+    <column id="130" parent="67" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;authorship_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4675</StateNumber>
+      <SequenceId>30707</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="131" parent="67" name="book_id">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>4675</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="132" parent="67" name="author_id">
+      <DasType>integer|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>4675</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="133" parent="67" name="authorship_book_id_fkey">
+      <ColNames>book_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30714</ObjectId>
+      <StateNumber>4675</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>22670</RefTableId>
+    </foreign-key>
+    <foreign-key id="134" parent="67" name="authorship_author_id_fkey">
+      <ColNames>author_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30719</ObjectId>
+      <StateNumber>4675</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>22695</RefTableId>
+    </foreign-key>
+    <index id="135" parent="67" name="authorship_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30712</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4675</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="136" parent="67" name="authorship_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30713</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4675</StateNumber>
+      <UnderlyingIndexId>30712</UnderlyingIndexId>
+    </key>
+    <column id="137" parent="68" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;book_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4656</StateNumber>
+      <SequenceId>22669</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="138" parent="68" name="title">
+      <DasType>varchar|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>4656</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="139" parent="68" name="author">
+      <DasType>varchar|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>4656</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="140" parent="68" name="publisher">
+      <DasType>varchar|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>4656</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="141" parent="68" name="publisher_year">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>4656</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="142" parent="68" name="copy_number">
+      <DasType>integer|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>4656</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="143" parent="68" name="book_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22676</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4656</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="144" parent="68" name="book_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22677</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4656</StateNumber>
+      <UnderlyingIndexId>22676</UnderlyingIndexId>
+    </key>
+    <column id="145" parent="69" name="id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;expenses_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -1138,21 +1729,21 @@ false Zulu
       <SequenceId>22598</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="64" parent="48" name="category">
+    <column id="146" parent="69" name="category">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4623</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="65" parent="48" name="amount">
+    <column id="147" parent="69" name="amount">
       <DasType>numeric(10,2 digit)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>4623</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <index id="66" parent="48" name="expenses_pkey">
+    <index id="148" parent="69" name="expenses_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22603</ObjectId>
@@ -1161,14 +1752,14 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="67" parent="48" name="expenses_pkey">
+    <key id="149" parent="69" name="expenses_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22604</ObjectId>
       <Primary>1</Primary>
       <StateNumber>4623</StateNumber>
       <UnderlyingIndexId>22603</UnderlyingIndexId>
     </key>
-    <column id="68" parent="49" name="id">
+    <column id="150" parent="70" name="id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;femalestudents_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -1177,28 +1768,28 @@ false Zulu
       <SequenceId>22659</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="69" parent="49" name="name">
+    <column id="151" parent="70" name="name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4649</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="70" parent="49" name="age">
+    <column id="152" parent="70" name="age">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>4649</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="71" parent="49" name="major">
+    <column id="153" parent="70" name="major">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>4649</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="72" parent="49" name="femalestudents_pkey">
+    <index id="154" parent="70" name="femalestudents_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22666</ObjectId>
@@ -1207,14 +1798,98 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="73" parent="49" name="femalestudents_pkey">
+    <key id="155" parent="70" name="femalestudents_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22667</ObjectId>
       <Primary>1</Primary>
       <StateNumber>4649</StateNumber>
       <UnderlyingIndexId>22666</UnderlyingIndexId>
     </key>
-    <column id="74" parent="50" name="id">
+    <column id="156" parent="71" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;genre_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4658</StateNumber>
+      <SequenceId>22685</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="157" parent="71" name="genre_name">
+      <DasType>varchar|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>4658</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="158" parent="71" name="genre_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22692</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4658</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="159" parent="71" name="genre_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22693</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4658</StateNumber>
+      <UnderlyingIndexId>22692</UnderlyingIndexId>
+    </key>
+    <column id="160" parent="72" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;genre_assignment_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4662</StateNumber>
+      <SequenceId>22735</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="161" parent="72" name="book_id">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>4662</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="162" parent="72" name="genre_id">
+      <DasType>integer|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>4662</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="163" parent="72" name="genre_assignment_id_fkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22742</ObjectId>
+      <StateNumber>4662</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>22670</RefTableId>
+    </foreign-key>
+    <foreign-key id="164" parent="72" name="genre_assignment_id_fkey1">
+      <ColNames>id</ColNames>
+      <ObjectId>22747</ObjectId>
+      <StateNumber>4662</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>22686</RefTableId>
+    </foreign-key>
+    <index id="165" parent="72" name="genre_assignment_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22740</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4662</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="166" parent="72" name="genre_assignment_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22741</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4662</StateNumber>
+      <UnderlyingIndexId>22740</UnderlyingIndexId>
+    </key>
+    <column id="167" parent="73" name="id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;grades_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -1223,28 +1898,28 @@ false Zulu
       <SequenceId>22638</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="75" parent="50" name="student_id">
+    <column id="168" parent="73" name="student_id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4643</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="76" parent="50" name="course">
+    <column id="169" parent="73" name="course">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>4643</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="77" parent="50" name="grade">
+    <column id="170" parent="73" name="grade">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>4643</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="78" parent="50" name="grades_student_id_fkey">
+    <foreign-key id="171" parent="73" name="grades_student_id_fkey">
       <ColNames>student_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22645</ObjectId>
@@ -1252,7 +1927,7 @@ false Zulu
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>22632</RefTableId>
     </foreign-key>
-    <index id="79" parent="50" name="grades_pkey">
+    <index id="172" parent="73" name="grades_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22643</ObjectId>
@@ -1261,39 +1936,39 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="80" parent="50" name="grades_pkey">
+    <key id="173" parent="73" name="grades_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22644</ObjectId>
       <Primary>1</Primary>
       <StateNumber>4643</StateNumber>
       <UnderlyingIndexId>22643</UnderlyingIndexId>
     </key>
-    <column id="81" parent="51" name="id">
+    <column id="174" parent="74" name="id">
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>3736</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="82" parent="51" name="name">
+    <column id="175" parent="74" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
       <StateNumber>3736</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="83" parent="51" name="type">
+    <column id="176" parent="74" name="type">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
       <StateNumber>3736</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="84" parent="51" name="image_data">
+    <column id="177" parent="74" name="image_data">
       <DasType>oid|0s</DasType>
       <Position>4</Position>
       <StateNumber>3736</StateNumber>
       <TypeId>26</TypeId>
     </column>
-    <index id="85" parent="51" name="images_pkey">
+    <index id="178" parent="74" name="images_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>21263</ObjectId>
@@ -1302,14 +1977,79 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="86" parent="51" name="images_pkey">
+    <key id="179" parent="74" name="images_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>21264</ObjectId>
       <Primary>1</Primary>
       <StateNumber>3736</StateNumber>
       <UnderlyingIndexId>21263</UnderlyingIndexId>
     </key>
-    <column id="87" parent="52" name="id">
+    <column id="180" parent="75" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;loan_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4685</StateNumber>
+      <SequenceId>30724</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="181" parent="75" name="book_id">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>4685</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="182" parent="75" name="reader_id">
+      <DasType>integer|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>4685</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="183" parent="75" name="loan_date">
+      <DasType>date|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>4685</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="184" parent="75" name="return_date">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>4685</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <foreign-key id="185" parent="75" name="loan_book_id_fkey">
+      <ColNames>book_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30731</ObjectId>
+      <StateNumber>4685</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>22670</RefTableId>
+    </foreign-key>
+    <foreign-key id="186" parent="75" name="loan_reader_id_fkey">
+      <ColNames>reader_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30736</ObjectId>
+      <StateNumber>4685</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>22679</RefTableId>
+    </foreign-key>
+    <index id="187" parent="75" name="loan_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30729</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4685</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="188" parent="75" name="loan_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>30730</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4685</StateNumber>
+      <UnderlyingIndexId>30729</UnderlyingIndexId>
+    </key>
+    <column id="189" parent="76" name="id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;malestudents_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -1318,28 +2058,28 @@ false Zulu
       <SequenceId>22650</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="88" parent="52" name="name">
+    <column id="190" parent="76" name="name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4648</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="89" parent="52" name="age">
+    <column id="191" parent="76" name="age">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>4648</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="90" parent="52" name="major">
+    <column id="192" parent="76" name="major">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>4648</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="91" parent="52" name="malestudents_pkey">
+    <index id="193" parent="76" name="malestudents_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22657</ObjectId>
@@ -1348,14 +2088,14 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="92" parent="52" name="malestudents_pkey">
+    <key id="194" parent="76" name="malestudents_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22658</ObjectId>
       <Primary>1</Primary>
       <StateNumber>4648</StateNumber>
       <UnderlyingIndexId>22657</UnderlyingIndexId>
     </key>
-    <column id="93" parent="53" name="id">
+    <column id="195" parent="77" name="id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;products_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -1364,21 +2104,21 @@ false Zulu
       <SequenceId>22605</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="94" parent="53" name="name">
+    <column id="196" parent="77" name="name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4629</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="95" parent="53" name="price">
+    <column id="197" parent="77" name="price">
       <DasType>numeric(10,2 digit)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>4629</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <index id="96" parent="53" name="products_pkey">
+    <index id="198" parent="77" name="products_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22610</ObjectId>
@@ -1387,14 +2127,73 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="97" parent="53" name="products_pkey">
+    <key id="199" parent="77" name="products_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22611</ObjectId>
       <Primary>1</Primary>
       <StateNumber>4629</StateNumber>
       <UnderlyingIndexId>22610</UnderlyingIndexId>
     </key>
-    <column id="98" parent="54" name="id">
+    <column id="200" parent="78" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;reader_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4657</StateNumber>
+      <SequenceId>22678</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="201" parent="78" name="first_name">
+      <DasType>varchar(30)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>4657</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="202" parent="78" name="last_name">
+      <DasType>varchar(30)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>4657</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="203" parent="78" name="address">
+      <DasType>varchar(70)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>4657</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="204" parent="78" name="phone_number">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>4657</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="205" parent="78" name="email">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>4657</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="206" parent="78" name="reader_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22683</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4657</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="207" parent="78" name="reader_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>22684</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4657</StateNumber>
+      <UnderlyingIndexId>22683</UnderlyingIndexId>
+    </key>
+    <column id="208" parent="79" name="id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;sales_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -1403,28 +2202,28 @@ false Zulu
       <SequenceId>22591</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="99" parent="54" name="product">
+    <column id="209" parent="79" name="product">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4620</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="100" parent="54" name="quantity">
+    <column id="210" parent="79" name="quantity">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>4620</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="101" parent="54" name="price">
+    <column id="211" parent="79" name="price">
       <DasType>numeric(10,2 digit)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>4620</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <index id="102" parent="54" name="sales_pkey">
+    <index id="212" parent="79" name="sales_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22596</ObjectId>
@@ -1433,26 +2232,26 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="103" parent="54" name="sales_pkey">
+    <key id="213" parent="79" name="sales_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22597</ObjectId>
       <Primary>1</Primary>
       <StateNumber>4620</StateNumber>
       <UnderlyingIndexId>22596</UnderlyingIndexId>
     </key>
-    <column id="104" parent="55" name="name">
+    <column id="214" parent="80" name="name">
       <DasType>varchar(10)|0s</DasType>
       <Position>1</Position>
       <StateNumber>739</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="105" parent="55" name="surname">
+    <column id="215" parent="80" name="surname">
       <DasType>varchar(15)|0s</DasType>
       <Position>2</Position>
       <StateNumber>739</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="106" parent="56" name="id">
+    <column id="216" parent="81" name="id">
       <DasType>integer|0s</DasType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
@@ -1461,21 +2260,21 @@ false Zulu
       <SequenceId>16810</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="107" parent="56" name="first_name">
+    <column id="217" parent="81" name="first_name">
       <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>950</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="108" parent="56" name="last_name">
+    <column id="218" parent="81" name="last_name">
       <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>950</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="109" parent="56" name="student_pkey">
+    <index id="219" parent="81" name="student_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16814</ObjectId>
@@ -1484,14 +2283,14 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="110" parent="56" name="student_pkey">
+    <key id="220" parent="81" name="student_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16815</ObjectId>
       <Primary>1</Primary>
       <StateNumber>950</StateNumber>
       <UnderlyingIndexId>16814</UnderlyingIndexId>
     </key>
-    <column id="111" parent="57" name="id">
+    <column id="221" parent="82" name="id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;students_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -1500,21 +2299,21 @@ false Zulu
       <SequenceId>22631</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="112" parent="57" name="name">
+    <column id="222" parent="82" name="name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4642</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="113" parent="57" name="age">
+    <column id="223" parent="82" name="age">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>4642</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="114" parent="57" name="students_pkey">
+    <index id="224" parent="82" name="students_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22636</ObjectId>
@@ -1523,27 +2322,27 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="115" parent="57" name="students_pkey">
+    <key id="225" parent="82" name="students_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22637</ObjectId>
       <Primary>1</Primary>
       <StateNumber>4642</StateNumber>
       <UnderlyingIndexId>22636</UnderlyingIndexId>
     </key>
-    <column id="116" parent="58" name="id">
+    <column id="226" parent="83" name="id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>4166</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="117" parent="58" name="url">
+    <column id="227" parent="83" name="url">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
       <StateNumber>4166</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="118" parent="58" name="urls_pkey">
+    <index id="228" parent="83" name="urls_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>21887</ObjectId>
@@ -1552,39 +2351,39 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="119" parent="58" name="urls_pkey">
+    <key id="229" parent="83" name="urls_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>21888</ObjectId>
       <Primary>1</Primary>
       <StateNumber>4166</StateNumber>
       <UnderlyingIndexId>21887</UnderlyingIndexId>
     </key>
-    <column id="120" parent="59" name="birthdate">
+    <column id="230" parent="84" name="birthdate">
       <DasType>date|0s</DasType>
       <Position>1</Position>
       <StateNumber>4553</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="121" parent="59" name="id">
+    <column id="231" parent="84" name="id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4553</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="122" parent="59" name="name">
+    <column id="232" parent="84" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
       <StateNumber>4553</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="123" parent="59" name="surname">
+    <column id="233" parent="84" name="surname">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
       <StateNumber>4553</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="124" parent="59" name="users_pkey">
+    <index id="234" parent="84" name="users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22504</ObjectId>
@@ -1593,7 +2392,7 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="125" parent="59" name="users_pkey">
+    <key id="235" parent="84" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>22505</ObjectId>
       <Primary>1</Primary>
