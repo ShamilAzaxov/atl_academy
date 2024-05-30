@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b63c48d-9426-42ff-8959-10770ebdd1aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/AbstractClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/AbstractClass2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/Hamster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interview/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/413339c1-03c2-4997-938d-2dec77881a9f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/413339c1-03c2-4997-938d-2dec77881a9f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/413339c1-03c2-4997-938d-2dec77881a9f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/413339c1-03c2-4997-938d-2dec77881a9f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/lesson3/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/lesson3/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/lesson7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/lesson7/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/task_sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/task_sql.sql" afterDir="false" />
-    </list>
+    <list default="true" id="9b63c48d-9426-42ff-8959-10770ebdd1aa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +174,7 @@
       <workItem from="1716545430743" duration="9357000" />
       <workItem from="1716807416509" duration="14957000" />
       <workItem from="1716925261561" duration="16013000" />
-      <workItem from="1717062946980" duration="2579000" />
+      <workItem from="1717062946980" duration="3024000" />
     </task>
     <servers />
   </component>
